@@ -322,7 +322,7 @@ class Range extends React.Component {
           included={included}
           offset={offsets[i - 1]}
           length={offsets[i] - offsets[i - 1]}
-          minimumTrackStyle
+          minimumTrackStyle={minimumTrackStyle}
           key={i}
         />
       );
