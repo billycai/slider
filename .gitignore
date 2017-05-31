@@ -22,7 +22,6 @@ Thumbs.db
 node_modules
 .cache
 build
-lib
 es
 /coverage
 yarn.lock
