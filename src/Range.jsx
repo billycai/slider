@@ -285,6 +285,8 @@ class Range extends React.Component {
       min,
       max,
       handle: handleGenerator,
+      handleStyle,
+      minimumTrackStyle,
     } = this.props;
 
     const offsets = bounds.map(v => this.calcOffset(v));
@@ -303,6 +305,7 @@ class Range extends React.Component {
       min,
       max,
       disabled,
+      handleStyle,
       ref: h => this.saveHandle(i, h),
     }));
 
@@ -319,6 +322,7 @@ class Range extends React.Component {
           included={included}
           offset={offsets[i - 1]}
           length={offsets[i] - offsets[i - 1]}
+          minimumTrackStyle
           key={i}
         />
       );
